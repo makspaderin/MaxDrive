@@ -1,0 +1,18 @@
+<% @page_title = "MaxDrive | Sign Up" %>
+<div class="form">
+  <h1>Sign Up</h1>
+  <%= form_for(@user) do |f| %>
+	<%= f.text_field :first_name, placeholder: "First Name", class: "field" %>
+	<%= f.text_field :last_name, placeholder: "Last Name", class: "field" %>
+	<%= f.text_field :username.lowercase, placeholder: "User Name, from 3 to 20 symbols", class: "field" %>
+	<%= f.password_field :password, placeholder: "Password, from 6  to 20 symbols", class: "field" %>
+    <%= f.submit :Signup %>
+  <% end %>
+  <% if @user.errors.any? %>
+    <ul class="Signup_Errors">
+    <% for message_error in @user.errors.full_messages %>
+      <li>* <%= message_error %></li>
+    <% end %>
+    </ul>
+  <% end %>
+</div>

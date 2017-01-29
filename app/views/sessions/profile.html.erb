@@ -1,0 +1,12 @@
+<div class="page">
+	<div class="edit form">
+		<h2 class='formtitle'> Profile of <%= current_user.username %> <h2>
+	    <%= form_for(current_user) do |f| %>
+			<%= f.text_field :first_name, placeholder: "Edit First Name", class: "field" %> <br>
+			<%= f.text_field :last_name, placeholder: "Edit Last Name", class: "field" %> <br>
+			<%= f.text_field :username, placeholder: "Edit username", class: "field" %> <br>
+			<%= f.password_field :password, placeholder: "New password", class: "field" %> <br>
+		    <%= f.submit "Save changes", class: "btn btn-warning btn-lg" %>
+		<% end %>
+	</div>
+</div>

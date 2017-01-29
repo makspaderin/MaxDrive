@@ -1,0 +1,9 @@
+<div class="page">
+	<div class="form">
+		<%= form_for @drive_file, url: {action: "create"} do |f| %>
+			<%= f.text_field :name, placeholder: "File Name", class: "field" %> <br>
+			<%= f.select :type, ['image', 'text', 'music', 'config/database', 'video', 'webpage', 'other' ], class: "field" %> <br>
+			<%= f.submit "Upload", class: "btn btn-warning btn-lg" %>
+		<% end %>
+	</div>
+</div>

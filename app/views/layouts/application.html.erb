@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MaxDrive</title>
+    <%= csrf_meta_tags %>
+    <%= favicon_link_tag 'favicon.ico' %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'bootstrap' %>
+    <%= stylesheet_link_tag "style" %>
+  </head>
+
+  <body>
+  <% if current_user %>
+    <header>
+   		<p> You are logged in as: <%= current_user.first_name %> <%= current_user.last_name %> </p>
+      <%= link_to "Log Out", logout_path, class: 'menuitem' %>
+      <%= link_to "Profile", '/profile', class: "menuitem" %>
+      <%= link_to "Storage", '/files', class: "menuitem" %>
+      <%= link_to "Home", '/home', class: "menuitem" %>
+    </header>
+	<% else %>
+    <header>
+      <p> You are currently not logged in </p>
+      <%= link_to "Sign Up", signup_path, class: 'menuitem' %>
+   		<%= link_to "Log In", login_path, class: 'menuitem' %>
+    </header>
+	<% end %>
+    <%= yield %>
+  </body>
+</html>

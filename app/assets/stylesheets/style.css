@@ -1,0 +1,144 @@
+body {
+	background-color: #E6F3F7;
+	position: relative;
+}
+
+header {
+	height: 10vh;
+	background-color: #fff;
+	position: relative;
+}
+
+header p {
+	font-family: 'GB';
+	margin-left: 1%;
+	font-size: 30px;
+	top: 50%;
+  	transform: translateY(-50%);
+  	position: relative;
+  	letter-spacing: 1px;
+  	display: inline-block;
+}
+
+.page {
+	height: 80vh;
+	position: relative;
+}
+
+.menuitem {
+	float: right;
+	font-family: 'GB';
+	text-transform: uppercase;
+	margin-left: 1%;
+	color: #000;
+	font-size: 26px;
+	margin-right: 1%;
+	text-align: right;
+	top: 50%;
+  	transform: translateY(-50%);
+  	letter-spacing: 2px;
+  	position: relative;
+  	display: inline-block;
+}
+
+.bigtext {
+	text-align: center;
+	top: 50%;
+  	transform: translateY(-50%);
+  	letter-spacing: 2px;
+  	position: relative;
+  	font-family: 'GL';
+}
+
+.form {
+	top: 50%;
+  	transform: translateY(-50%);
+  	position: relative;
+  	text-align: center;
+}
+
+.formtitle {
+	font-family: 'GL';
+	letter-spacing: 1px;
+}
+
+.field {
+	width: 275px;
+	height: 60px;
+	margin-top: 1%;
+	border: 1px solid black;
+}
+
+input[type=text]:focus {
+    background-color: orange;
+}
+
+input {
+	text-align: center;
+	font-family: 'GL';
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+select {
+	margin-top: 1%;
+	text-align: center;
+	font-family: 'GL';
+	letter-spacing: 2px;	
+}
+
+.edit input {
+	text-transform: none;
+}
+
+.btn {
+	margin-top: 1%;
+	color: #000;
+	font-family: 'GL';
+	text-transform: uppercase;
+}
+
+/* Styling */
+
+a:hover {
+	color: #000;
+}
+
+::-webkit-input-placeholder {
+   text-align: center;
+   color: #000;
+   font-family: 'GL';
+   text-transform: uppercase;
+   letter-spacing: 2px;
+}
+
+.edit, ::-webkit-input-placeholder {
+   text-transform: none;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center; 
+   color: #000; 
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center; 
+   color: #000; 
+}
+
+:-ms-input-placeholder {  
+   text-align: center;
+   color: #000;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'GB';
+    src: url('Gilroy-bold.OTF');
+}
+
+@font-face {
+    font-family: 'GL';
+    src: url('Gilroy-light.OTF');
+}

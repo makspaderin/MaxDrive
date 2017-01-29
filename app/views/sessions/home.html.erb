@@ -1,0 +1,11 @@
+<% if current_user %>
+	<div class="page">
+		<h1 class="bigtext"> Welcome to MaxDrive, <%= current_user.first_name %> <%= current_user.last_name %>! </h1>
+		<h1 class="bigtext"> Current date and time: <%= Time.now.strftime("%d/%m/%Y %H:%M") %> </h1>
+	</div>
+<% else %>
+	<div class="page">
+		<h1 class="bigtext"> Hello! </h1>
+		<h1 class="bigtext"> You should be logged in to continue.</h1>
+	</div>
+<% end %>

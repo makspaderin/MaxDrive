@@ -1,0 +1,11 @@
+<% @page_title = "MaxDrive | Log In" %>
+<div class="page">
+	<div class= "form">
+	  <h1 class="formtitle">Log in</h1>
+		<%= form_for(:session, url: login_path) do |form| %>
+		<%= form.text_field :username, placeholder: "Username", class: "field" %> <br>
+		<%= form.password_field :password, placeholder: "Password", class: "field" %> <br>
+		<%= form.submit "Login", class: "btn btn-warning btn-lg" %>
+		<% end %>
+	</div>
+</div>
