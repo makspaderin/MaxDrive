@@ -1,7 +1,7 @@
 <% if current_user %>
 	<div class="page">
 		<h1 class="bigtext"> Welcome to MaxDrive, <%= current_user.first_name %> <%= current_user.last_name %>! </h1>
-		<h1 class="bigtext"> Current date and time: <%= Time.now.strftime("%d/%m/%Y %H:%M").in_time_zone('Eastern Time (US & Canada)') %> </h1>
+		<h1 class="bigtext"> Current date and time: <%= Time.now.in_time_zone %> </h1>
 	</div>
 <% else %>
 	<div class="page">
