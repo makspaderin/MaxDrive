@@ -7,12 +7,6 @@ class UsersController < ApplicationController
 		if @user.save
 			session[:user_id] = @user.id
 			redirect_to '/'
-
-			require 'fileutils'
-				path = 'd:/work/projects/testfiles/#{@user.id.to_s}'
-				dirname = File.dirname(path)
-				unless File.directory?(dirname)
-	  			FileUtils.mkdir_p(dirname)
 			end
 		else
 			redirect_to '/signup'

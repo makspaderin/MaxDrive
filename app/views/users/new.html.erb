@@ -4,7 +4,7 @@
   <%= form_for(@user) do |f| %>
 	<%= f.text_field :first_name, placeholder: "First Name", class: "field" %>
 	<%= f.text_field :last_name, placeholder: "Last Name", class: "field" %>
-	<%= f.text_field :username.lowercase, placeholder: "User Name, from 3 to 20 symbols", class: "field" %>
+	<%= f.text_field :username, placeholder: "User Name, from 3 to 20 symbols", class: "field" %>
 	<%= f.password_field :password, placeholder: "Password, from 6  to 20 symbols", class: "field" %>
     <%= f.submit :Signup %>
   <% end %>
