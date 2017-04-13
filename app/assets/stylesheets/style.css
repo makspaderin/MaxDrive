@@ -51,10 +51,14 @@ header p {
 }
 
 .form {
-	top: 50%;
-  	transform: translateY(-50%);
-  	position: relative;
-  	text-align: center;
+		margin-top: 25%;
+		text-align: center;
+		margin: 0 auto;
+}
+
+.form h1 {
+	font-family: 'GL';
+	letter-spacing: 1px;
 }
 
 .formtitle {
@@ -69,6 +73,16 @@ header p {
 	border: 1px solid black;
 }
 
+input[type=submit] {
+	margin-top: 2%;
+	margin-bottom: 2%;
+border-radius: 5px;
+border: 0;
+width: 120px;
+height:50px;
+background: orange;
+}
+
 input[type=text]:focus {
     background-color: orange;
 }
@@ -76,7 +90,6 @@ input[type=text]:focus {
 input {
 	text-align: center;
 	font-family: 'GL';
-	text-transform: uppercase;
 	letter-spacing: 2px;
 }
 
@@ -84,7 +97,7 @@ select {
 	margin-top: 1%;
 	text-align: center;
 	font-family: 'GL';
-	letter-spacing: 2px;	
+	letter-spacing: 2px;
 }
 
 .edit input {
@@ -117,16 +130,16 @@ a:hover {
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   text-align: center; 
-   color: #000; 
+   text-align: center;
+   color: #000;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   text-align: center; 
-   color: #000; 
+   text-align: center;
+   color: #000;
 }
 
-:-ms-input-placeholder {  
+:-ms-input-placeholder {
    text-align: center;
    color: #000;
 }
