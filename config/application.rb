@@ -7,6 +7,7 @@ require 'rails/all'
 Bundler.require(*Rails.groups)
 config.time_zone = 'Eastern European Time'
 config.active_record.default_timezone = :local
+Paperclip.options[:command_path] = "/usr/local/bin/"
 
 module Maxdrive
   class Application < Rails::Application
