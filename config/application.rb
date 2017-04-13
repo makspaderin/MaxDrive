@@ -5,7 +5,7 @@ require 'rails/all'
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
-config.time_zone = 'Eastern European Time'
+config.time_zone = 'Eastern Time (US & Canada)'
 config.active_record.default_timezone = :local
 Paperclip.options[:command_path] = "/usr/local/bin/"
 
