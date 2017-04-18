@@ -32,7 +32,7 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 gem 'coffee-script-source', '1.8.0'
-gem "paperclip", "~> 3.1"
+gem 'paperclip', github: 'thoughtbot/paperclip'
 gem 'railties', "~> 5.0.2"
 # gem 'fileutils', '~> 0.7'
 # gem 'rmagick', '~> 2.13.4'

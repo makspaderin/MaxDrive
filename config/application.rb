@@ -5,7 +5,6 @@ require 'rails/all'
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
-config.time_zone = 'Eastern Time (US & Canada)'
 Paperclip.options[:command_path] = "/usr/local/bin/"
 
 module Maxdrive
