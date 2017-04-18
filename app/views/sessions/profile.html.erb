@@ -6,7 +6,7 @@
 			<%= f.text_field :last_name, placeholder: "Edit Last Name", class: "field" %> <br>
 			<%= f.text_field :username, placeholder: "Edit username", class: "field" %> <br>
 			<%= f.password_field :password, placeholder: "New password", class: "field" %> <br>
-			    <%= f.file_field :photo %>
+			    <%= f.file_field :photo, class: "text-center centralize" %>
 		    <%= f.submit "Save changes", class: "btn btn-warning btn-lg" %>
 		<% end %>
 	</div>

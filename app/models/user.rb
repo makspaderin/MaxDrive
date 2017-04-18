@@ -5,6 +5,6 @@ class User < ActiveRecord::Base
 	validates :photo,
     attachment_content_type: { content_type: /\Aimage\/.*\Z/ }
 
-	 has_attached_file :photo, :styles => { :medium => "300x300>", :thumb => "100x100>" }
+	 has_attached_file :photo, :styles => { :medium => "300x300>", :thumb => "50x50#" }
 
 end

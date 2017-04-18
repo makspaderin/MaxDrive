@@ -20,6 +20,10 @@ header p {
   	display: inline-block;
 }
 
+.centralize {
+	text-align: center;
+}
+
 .page {
 	height: 80vh;
 	position: relative;
